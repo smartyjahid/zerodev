@@ -20,7 +20,7 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     var screensize = MediaQuery.of(context).size;
-    Widget mobileNumber = TextFormField(
+    Widget Serchfield = TextFormField(
       keyboardType: TextInputType.text,
       validator: (input) {
         if (input!.isEmpty) {
@@ -35,7 +35,7 @@ class _HomepageState extends State<Homepage> {
       controller: searchEditingController,
       decoration: InputDecoration(
         filled: true,
-        fillColor: Color.fromRGBO(242, 242, 242, 1),
+        fillColor: Color.fromRGBO(15, 2, 2, 1),
 
         hintText: Search_title_key,
         prefixIcon: Icon(Icons.search),
@@ -66,7 +66,7 @@ class _HomepageState extends State<Homepage> {
                         ),
                         SizedBox(
                           width: screensize.width - 20,
-                          child: mobileNumber,
+                          child: Serchfield,
                         ),
                         SizedBox(
                           height: 20,
